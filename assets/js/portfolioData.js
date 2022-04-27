@@ -1,15 +1,15 @@
 const Portfolios = [
     {
         filterType: "filter-web filter-app",
-        imgTitle: "Attractant",
-        imgP: "Web Site",
-        imgSrc: "portfolio-6.png",
-        portfolioLink: "https://www.google.com",
+        imgTitle: "abaad",
+        imgP: "Web Application",
+        imgSrc: "portfolio-abaad.png",
+        portfolioLink: "https://abaad.news",
     },
     {
         filterType: "filter-web",
-        imgTitle: "Attractant",
-        imgP: "Web Site",
+        imgTitle: "Alawadi",
+        imgP: "Branding & Social",
         imgSrc: "portfolio-5.png",
         portfolioLink: "https://www.google.com",
     },
