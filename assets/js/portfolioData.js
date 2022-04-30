@@ -55,14 +55,16 @@ const Portfolios = [
         imgTitle: "Alawadi",
         imgP: "Branding & Social",
         imgSrc: "Portfolio-alawadi2.png",
-        portfolioLink: "https://www.behance.net/gallery/134706405/Mohamed-El-Awady",
+        portfolioLink:
+            "https://www.behance.net/gallery/134706405/Mohamed-El-Awady",
     },
     {
         filterType: "filter-social",
         imgTitle: "FBA - Fit and Fly",
         imgP: "Social Media",
         imgSrc: "portfolio-fba.png",
-        portfolioLink: "https://www.behance.net/gallery/113802199/Fly-Badr-Academy",
+        portfolioLink:
+            "https://www.behance.net/gallery/113802199/Fly-Badr-Academy",
     },
     {
         filterType: "filter-branding",
@@ -83,14 +85,15 @@ const Portfolios = [
         imgTitle: "Habib Diamond",
         imgP: "Branding",
         imgSrc: "portfolio-habib.png",
-        portfolioLink: "https://www.behance.net/gallery/113802607/Habib-Diamond",
+        portfolioLink:
+            "https://www.behance.net/gallery/113802607/Habib-Diamond",
     },
     {
         filterType: "filter-Branding",
         imgTitle: "Kaaf",
         imgP: "Branding",
         imgSrc: "portfolio-kaaf.png",
-        portfolioLink: "https://www.behance.net/gallery/90755075/Kaaf-Enough,
+        portfolioLink: "https://www.behance.net/gallery/90755075/Kaaf-Enough",
     },
     {
         filterType: "filter-social",
