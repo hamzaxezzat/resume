@@ -43,11 +43,18 @@ const Portfolios = [
     },
 
     {
-        filterType: "filter-web filter-app",
+        filterType: "filter-web filter-social",
         imgTitle: "abaad",
         imgP: "Web Application",
         imgSrc: "portfolio-abaad.png",
         portfolioLink: "https://abaad.news",
+    },
+    {
+        filterType: "filter-web",
+        imgTitle: "Dashboard",
+        imgP: "Web Application",
+        imgSrc: "portfolio-dashboard.png",
+        portfolioLink: "http://dashboards.gq",
     },
 
     {

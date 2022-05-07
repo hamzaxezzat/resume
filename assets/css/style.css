@@ -431,47 +431,6 @@ section .container {
     }
 }
 /*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-    padding: 70px 0 60px;
-}
-
-.counts .count-box {
-    padding: 30px 30px 25px 30px;
-    width: 100%;
-    position: relative;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.counts .count-box i {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 12px;
-    color: var(--color-primary);
-    border-radius: 50px;
-}
-
-.counts .count-box span {
-    font-size: 36px;
-    display: block;
-    font-weight: var(--font-weight-500);
-    color: var(--color-white);
-}
-
-.counts .count-box p {
-    padding: 0;
-    margin: 0;
-    font-family: "Raleway", sans-serif;
-    font-size: 14px;
-}
-
-/*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
 .skills .progress {
@@ -493,17 +452,6 @@ section .container {
 .skills .progress .skill .val {
     float: right;
     font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: var(--color-primary);
 }
 
 /*--------------------------------------------------------------
@@ -687,7 +635,16 @@ a {
     background: var(--color-primary);
     border: 2px solid var(--color-primary);
 }
-
+.resume .text-center button {
+    margin-top: 40px;
+    background: var(--color-primary);
+    border: 0;
+    text-decoration: underline;
+    padding: 10px 30px;
+    color: var(--color-white);
+    transition: 0.4s;
+    /* border-radius: 4px; */
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1094,11 +1051,11 @@ a {
     padding: 10px 30px;
     color: var(--color-white);
     transition: 0.4s;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #15bb62;
+    background: var(--color-primary);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1228,7 +1185,8 @@ a {
 
 /* Global */
 h3 {
-    background-color: #1230f3aa;
+    background-color: var(--color-primary);
+    /* color: #fff !important; */
     display: inline-block;
     padding: 5px 10px;
 }
