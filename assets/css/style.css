@@ -1,20 +1,18 @@
-/**
-* Template Name: Personal - v2.4.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # Root
 --------------------------------------------------------------*/
 :root {
-    --color-primary: #1A74E2;
-    --color-primary-hover: #1A74E2;
-    --color-white: #fff;;
+    /* --color-primary: #1A74E2; */
+    --color-primary: #0445ea;
+    --color-primary-hover: #0300ab;
+    --color-white: #fff;
     /* --color-black: rgba(0, 0, 0, 0.9); */
     --color-black: rgba(0, 0, 0, 0.412);
     --color-light: rgba(255, 255, 255, 0.7);
+    --font-weight-Bold: 700;
+    --font-weight-Medium: 500;
+    --font-weight-regular: 300;
+    --font-weight-thin: 100;
 }
 /*--------------------------------------------------------------
 # General
@@ -23,7 +21,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #040404;
-    color: var(--color-white);;
+    color: var(--color-white);
     position: relative;
     background: transparent;
 }
@@ -44,10 +42,6 @@ body::before {
     body::before {
         background-attachment: fixed;
     }
-}
-
-a {
-    color: var(--color-primary);
 }
 
 a:hover {
@@ -86,13 +80,13 @@ h6 {
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
     font-family: "Poppins", sans-serif;
 }
 
 #header h1 a,
 #header h1 a:hover {
-    color: var(--color-white);;
+    color: var(--color-white);
     line-height: 1;
     display: inline-block;
 }
@@ -104,8 +98,8 @@ h6 {
 }
 
 #header h2 span {
-    color: var(--color-white);;
-    border-bottom: 2px solid var(--color-primary);;
+    color: var(--color-white);
+    border-bottom: 2px solid var(--color-primary);
     padding-bottom: 6px;
 }
 
@@ -125,7 +119,7 @@ h6 {
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
-    color: var(--color-white);;
+    color: var(--color-white);
     line-height: 1;
     margin-right: 8px;
     border-radius: 50%;
@@ -134,7 +128,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-    background: var(--color-primary);;
+    background: var(--color-primary);
 }
 
 @media (max-width: 992px) {
@@ -180,7 +174,7 @@ h6 {
     color: rgba(255, 255, 255, 0.7);
     font-size: 16px;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: var(--font-weight-light);
 }
 
 .nav-menu a:before {
@@ -206,7 +200,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-    color: var(--color-white);;
+    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -227,7 +221,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 .mobile-nav {
@@ -256,9 +250,9 @@ h6 {
 .mobile-nav a {
     display: block;
     position: relative;
-    color: var(--color-white);;
+    color: var(--color-white);
     padding: 10px 20px;
-    font-weight: 500;
+    font-weight: var(--font-weight-regular);
     outline: none;
 }
 
@@ -292,7 +286,7 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 /* Header Top */
@@ -370,7 +364,7 @@ section .container {
 
 .section-title h2 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-weight-regular);
     padding: 0;
     line-height: 1px;
     margin: 0 0 20px 0;
@@ -393,19 +387,19 @@ section .container {
     margin: 0;
     margin: -15px 0 15px 0;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about-me .content h3 {
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
     font-size: 26px;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .about-me .content ul {
@@ -422,12 +416,20 @@ section .container {
     padding-right: 2px;
     color: var(--color-primary);
 }
+.about-me .content ul li a {
+    color: rgb(255, 255, 255);
+}
 
 .about-me .content p:last-child {
     margin-bottom: 0;
-    font-size: 13px;
+    font-weight: var(--font-weight-light);
+    font-size: 14px;
 }
-
+@media (max-width: 986px) {
+    .about-me .skills div {
+        margin-top: 10px;
+    }
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -458,8 +460,8 @@ section .container {
 .counts .count-box span {
     font-size: 36px;
     display: block;
-    font-weight: 600;
-    color: var(--color-white);;
+    font-weight: var(--font-weight-500);
+    color: var(--color-white);
 }
 
 .counts .count-box p {
@@ -483,9 +485,9 @@ section .container {
     margin: 0 0 6px 0;
     text-transform: uppercase;
     display: block;
-    font-weight: 600;
+    font-weight: var(--font-weight-500);
     font-family: "Poppins", sans-serif;
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 .skills .progress .skill .val {
@@ -522,12 +524,12 @@ section .container {
 }
 
 .interests .icon-box h3 {
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
     margin: 0;
     padding: 0;
     line-height: 1;
     font-size: 16px;
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 .interests .icon-box:hover {
@@ -555,7 +557,7 @@ section .container {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 5px 45px;
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 .testimonials .testimonial-item h4 {
@@ -610,7 +612,7 @@ section .container {
 }
 
 .testimonials .owl-dot.active {
-    background-color: var(--color-primary); !important;
+    background-color: var(--color-primary);
 }
 
 @media (max-width: 767px) {
@@ -618,16 +620,19 @@ section .container {
         margin: 30px 10px;
     }
 }
-
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+.resume .container {
+    background: rgba(0, 0, 0, 0.679) !important;
+}
 .resume .resume-title {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
     margin-top: 20px;
     margin-bottom: 20px;
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 .resume .resume-item {
@@ -640,10 +645,10 @@ section .container {
 .resume .resume-item h4 {
     line-height: 18px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: var(--font-weight-500);
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: var(--color-primary);
+    color: var(--color-white);
     margin-bottom: 10px;
 }
 
@@ -652,8 +657,11 @@ section .container {
     background: rgba(255, 255, 255, 0.15);
     padding: 5px 15px;
     display: inline-block;
-    font-weight: 600;
+    font-weight: var(--font-weight-500);
     margin-bottom: 10px;
+}
+a {
+    color: var(--color-white);
 }
 
 .resume .resume-item ul {
@@ -676,8 +684,8 @@ section .container {
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: var(--color-primary);;
-    border: 2px solid var(--color-primary);;
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
 }
 
 /*--------------------------------------------------------------
@@ -694,7 +702,7 @@ section .container {
     margin: 0 auto;
     width: 64px;
     height: 64px;
-    background: var(--color-primary);;
+    background: var(--color-primary);
     border-radius: 5px;
     transition: all 0.3s ease-out 0s;
     display: flex;
@@ -705,7 +713,7 @@ section .container {
 }
 
 .services .icon-box .icon i {
-    color: var(--color-white);;
+    color: var(--color-white);
     font-size: 28px;
 }
 
@@ -723,13 +731,13 @@ section .container {
 }
 
 .services .icon-box h4 {
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
     margin-bottom: 15px;
     font-size: 24px;
 }
 
 .services .icon-box h4 a {
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 .services .icon-box p {
@@ -739,12 +747,12 @@ section .container {
 }
 
 .services .icon-box:hover {
-    background: var(--color-primary);;
+    background: var(--color-primary);
     border-color: var(--color-primary);
 }
 
 .services .icon-box:hover .icon {
-    background: var(--color-white);;
+    background: var(--color-white);
 }
 
 .services .icon-box:hover .icon i {
@@ -757,7 +765,7 @@ section .container {
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 /*--------------------------------------------------------------
@@ -781,10 +789,10 @@ section .container {
     display: inline-block;
     padding: 8px 16px 10px 16px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: var(--font-weight-500);
     line-height: 1;
     text-transform: uppercase;
-    color: var(--color-white);;
+    color: var(--color-white);
     background: rgba(255, 255, 255, 0.1);
     margin: 0 3px 10px 3px;
     transition: all 0.3s ease-in-out;
@@ -793,7 +801,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: var(--color-primary);;
+    background: var(--color-primary);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -845,8 +853,8 @@ section .container {
     position: absolute;
     top: 35px;
     left: 35px;
-    border-top: 3px solid var(--color-white);;
-    border-left: 3px solid var(--color-white);;
+    border-top: 3px solid var(--color-white);
+    border-left: 3px solid var(--color-white);
     transition: all 0.5s ease 0s;
     z-index: 9994;
 }
@@ -859,20 +867,20 @@ section .container {
     position: absolute;
     bottom: 35px;
     right: 35px;
-    border-bottom: 3px solid var(--color-white);;
-    border-right: 3px solid var(--color-white);;
+    border-bottom: 3px solid var(--color-white);
+    border-right: 3px solid var(--color-white);
     transition: all 0.5s ease 0s;
     z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
     font-size: 20px;
-    color: var(--color-white);;
-    font-weight: 600;
+    color: var(--color-white);
+    font-weight: var(--font-weight-500);
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-    color: var(--color-white);fff;
+    color: var(--color-white);
     font-size: 14px;
     text-transform: uppercase;
     padding: 0;
@@ -885,7 +893,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-    color: var(--color-white);;
+    color: var(--color-white);
     margin: 0 2px;
     font-size: 28px;
     display: inline-block;
@@ -940,13 +948,14 @@ section .container {
 .contact .info-box h3 {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    margin: 10px 0 8px 68px;
+    font-weight: var(--font-weight-Bold);
+    margin: 10px 0 8px 10px;
+    background: none;
 }
 
 .contact .info-box p {
     padding: 0;
-    color: var(--color-white);;
+    color: var(--color-white);
     line-height: 24px;
     font-size: 14px;
     margin: 0 0 0 68px;
@@ -960,7 +969,7 @@ section .container {
 .contact .info-box .social-links a {
     font-size: 18px;
     display: inline-block;
-    color: var(--color-white);;
+    color: var(--color-white);
     line-height: 1;
     margin-right: 12px;
     transition: 0.3s;
@@ -979,7 +988,7 @@ section .container {
     display: none;
     color: red;
     margin: 0 0 15px 0;
-    font-weight: 400;
+    font-weight: var(--font-weight-light);
     font-size: 13px;
 }
 
@@ -989,7 +998,7 @@ section .container {
     background: #ed3c0d;
     text-align: left;
     padding: 15px;
-    font-weight: 600;
+    font-weight: var(--font-weight-500);
 }
 
 .contact .php-email-form .error-message br + br {
@@ -999,10 +1008,10 @@ section .container {
 .contact .php-email-form .sent-message {
     display: none;
     background: rgba(255, 255, 255, 0.08);
-    background: var(--color-primary);;
+    background: var(--color-primary);
     text-align: center;
     padding: 15px;
-    font-weight: 600;
+    font-weight: var(--font-weight-500);
 }
 
 .contact .php-email-form .loading {
@@ -1019,7 +1028,7 @@ section .container {
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid var(--color-primary);;
+    border: 3px solid var(--color-primary);
     border-top-color: #eee;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
@@ -1033,7 +1042,7 @@ section .container {
     background: rgba(255, 255, 255, 0.08);
     border: 0;
     transition: 0.3s;
-    color: var(--color-white);;
+    color: var(--color-white);
 }
 
 .contact .php-email-form input:focus,
@@ -1080,10 +1089,10 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"] {
-    background: var(--color-primary);;
+    background: var(--color-primary);
     border: 0;
     padding: 10px 30px;
-    color: var(--color-white);;
+    color: var(--color-white);
     transition: 0.4s;
     border-radius: 4px;
 }
@@ -1131,7 +1140,7 @@ section .container {
 
 .portfolio-details .portfolio-title {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: var(--font-weight-Bold);
     margin-bottom: 20px;
 }
 
@@ -1151,7 +1160,7 @@ section .container {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-    background-color: var(--color-primary); !important;
+    background-color: var(--color-primary);
 }
 
 .portfolio-details .portfolio-info {
@@ -1160,7 +1169,7 @@ section .container {
 
 .portfolio-details .portfolio-info h3 {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: var(--font-weight-light);
     margin-bottom: 20px;
 }
 
@@ -1193,10 +1202,10 @@ section .container {
     right: 0;
     left: 0;
     bottom: 0;
-    padding: 15px;
+    padding: 15px 20px;
     text-align: right;
     font-size: 13px;
-    color: var(--color-white);;
+    color: var(--color-white);
     z-index: 999999;
 }
 
@@ -1214,5 +1223,12 @@ section .container {
 }
 
 .credits a:hover {
-    color: var(--color-white);;
+    color: var(--color-white);
+}
+
+/* Global */
+h3 {
+    background-color: #1230f3aa;
+    display: inline-block;
+    padding: 5px 10px;
 }
